@@ -1,0 +1,124 @@
+.secondAnimation {
+  border-radius: 20px;
+  margin: auto;
+  height: 450px;
+  padding: 20px;
+  width: 80vw;
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: -450px;
+}
+.flowerImage{
+    position: absolute;
+    top: -10px;
+    right: 40%;
+  animation: scaleUp 2s 1s ease-in-out infinite;
+}
+.whiteCircle{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+    background-color: white;
+    border: 10px solid lightgray;
+}
+.secondPoint{
+    position: absolute;
+    left: 52px;
+    top: -25px;
+}
+.secondPoint2{
+    position: absolute;
+    top: 13px;
+    left: 26px;
+    width: 100px;
+}
+.shape2 {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  animation: scaleUp 3s 4s ease-in-out infinite;
+}
+
+.shape11 {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+
+.shape6,
+.shape7 {
+  position: absolute;
+  top: 300px;
+  left: 360px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape7 {
+  top: 310px;
+  left: 370px;
+}
+.shape8,
+.shape9 {
+  position: absolute;
+  top: 70px;
+  right: 120px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape9 {
+  top: 85px;
+  right: 135px;
+}
+
+.secondquaterLeaf1 {
+  position: absolute;
+  top: 250px;
+  left: 400px;
+  animation: circleIt 0.8s ease-in-out infinite;
+  rotate: -360deg;
+}
+.secondquaterLeaf2 {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  animation: circleIt 0.8s ease-in-out infinite;
+  rotate: -360deg;
+}
+
+@keyframes circleIt {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(-180deg) scale(1);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
+@keyframes scaleUp {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+}
+
+
+@keyframes moveUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

@@ -1,0 +1,114 @@
+.home-right {
+  border-radius: 20px;
+  margin: auto;
+  height: 550px;
+  padding: 20px;
+  width: 90vw;
+  position: absolute;
+  background-color: #7cb5b7;
+  margin-left: 5vw;
+}
+.shape-1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  animation: scaleUp 2s 3s ease-in-out infinite;
+}
+
+.shape-2 {
+  position: absolute;
+  right: 10%;
+  top: 55%;
+  animation: scaleUp 3s 4s ease-in-out infinite;
+}
+
+.shape-3 {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  animation: scaleUp 3s 1s ease-in-out infinite;
+}
+
+.shape-4 {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  animation: moveUp 3s 1s ease-in-out infinite;
+}
+
+.shape-5 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape-11 {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape-10 {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  animation: scaleUp 3s ease-in-out infinite;
+}
+.shape-6,.shape-7 {
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape-7{
+    top: 160px;
+    left: 310px;
+}
+.shape-8,.shape-9 {
+  position: absolute;
+  top: 400px;
+  left: 350px;
+  animation: moveUp 3s ease-in-out infinite;
+}
+.shape-9{
+    top: 415px;
+    left: 365px;
+}
+
+.quaterLeaf{
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  animation: moveUp 3s ease-in-out infinite;
+  rotate: -90deg;
+}
+.bigQuaterLeaf{
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  animation: moveUp 3s ease-in-out infinite;
+  rotate: -135deg;
+}
+
+@keyframes scaleUp {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-5px) scale(1.05);
+  }
+}
+
+@keyframes moveUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
